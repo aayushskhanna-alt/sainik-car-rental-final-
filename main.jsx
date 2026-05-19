@@ -8,9 +8,9 @@ import CustomerPortal from './CustomerPortal.jsx'
 const path = window.location.pathname
 
 const getView = () => {
-  if(path === '/driver') return <DriverView />
-  if(path === '/cars') return <CustomerPortal />
-  return <App />
+  if (path === '/driver') return <DriverView />
+  if (path === '/admin') return <App />
+  return <CustomerPortal />
 }
 
 createRoot(document.getElementById('root')).render(
